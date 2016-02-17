@@ -62,7 +62,7 @@ var UserSchema = new Schema({
     default: '',
   },
   age: {
-    type: String,
+    type: Number,
     trim: true,
     default: '',
   },
