@@ -1,10 +1,18 @@
 <section data-ng-controller="ProjectsController">
     <form class="container-fluid">
         <div class="row">
-            <div class="col-sm-3 col-md-2 sidebar">
-                <!-- this is the sidebar located on the side of the page, to allow easy navigator. -->
-                <ul class="nav nav-sidebar">
-                    <li class="active">
+           
+                <!-- This is the start of the  standards side bar-->
+            <div class="col-sm-7 col-sm-offset-10 col-md-8 col-md-offset-9 sidebar">
+                <h1>STANDARDS</h1>   
+                <h4 class="sub-header">Search : <input id="standard" type="text" placeholder="MAFS.912.A-APR.1.1" data-ng-model="standard_search"></h4>
+                <span data-drag="true" data-jqyoui-options="{revert: 'invalid', helper: 'clone', appendTo: 'body'}" jqyoui-draggable="{placeholder: 'keep'}">So you think you can drag</span>
+
+<!-- this is the sidebar located on the side of the page, to allow easy navigator. -->
+            <!--<div class="col-sm-3 col-md-2 sidebar">
+                <ul class="nav-sidebar">
+                    <li class="active"> pretty sure this is a typo
+                    
                     <li class="active"><a href="#"><h4>Design Menu</h4></a></li>
                     <p class="text-center">
                     <li><a id="#1" href="#1">Basic Goal</a></li>
@@ -20,8 +28,8 @@
                     <li><a data-ui-sref="projects.list">View other Projects</a></li>
                     <li><a data-ui-sref="support.example">Example</a></li>
                     <li><a data-ui-sref="support.faq">FAQ</a></li>
-                    </p>
-                </ul>
+                    </p> 
+                </ul> -->
             </div>
             <!-- This is the main form with the various fileds the user has to fill out. It's linked to the database. -->
             
@@ -158,7 +166,7 @@
                         <br>
                         <br>
 
-         <!-- Below is the code to add a subject. The same code is repeated to add up to a toal of 5 topics. -->
+         <!-- Below is the code to add a subject. The same code is repeated to add up to a total of 5 topics. -->
          
             <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
             <center><button type="submit" class="btn btn-primary btn-block" ng-click="show1 = true; essentialDetails.otherSubject = []; essentialDetails.otherSubject.push()">Add a subject</button></center></div>
