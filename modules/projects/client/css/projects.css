@@ -1,6 +1,12 @@
 
 /* Cloned from support page's CSS for consistent look*/
 
+.cart { 
+	width: 600px; 
+	float: left; 
+	margin-top: 1em; 
+}
+
 #by_class_dropdown{
 	
 }
