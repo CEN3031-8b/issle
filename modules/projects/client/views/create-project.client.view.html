@@ -1,21 +1,10 @@
 <section data-ng-controller="ProjectsController">
     <form class="container-fluid">
         <div class="row">
-           
-                <!-- This is the start of the  standards side bar-->
-            <div class="col-sm-7 col-sm-offset-10 col-md-8 col-md-offset-9 sidebar">
-                <h1>STANDARDS</h1>   
-                <h4 class="sub-header">Search : <input id="standard" type="text" placeholder="MAFS.912.A-APR.1.1" data-ng-model="standard_search"></h4>
-                <ul>
-                    <li ng-repeat="item in testList1" ng-show="item.title" data-drag="true" ng-model="testList1" data-jqyoui-options="{revert: 'invalid', helper: 'clone', appendTo: 'body'}" jqyoui-draggable="{index: {{$index}}, animate: true, placeholder: 'keep'}">{{item.title}}</li>
-                </ul> 
-                <!--<span data-drag="true" data-jqyoui-options="{revert: 'invalid', helper: 'clone', appendTo: 'body'}" jqyoui-draggable="{placeholder: 'keep'}">So you think you can drag</span>-->
-
-<!-- this is the sidebar located on the side of the page, to allow easy navigator. -->
-            <!--<div class="col-sm-3 col-md-2 sidebar">
-                <ul class="nav-sidebar">
-                    <li class="active"> pretty sure this is a typo
-                    
+            <div class="col-sm-3 col-md-2 sidebar">
+                <!-- this is the sidebar located on the side of the page, to allow easy navigator. -->
+                <ul class="nav nav-sidebar">
+                    <li class="active">
                     <li class="active"><a href="#"><h4>Design Menu</h4></a></li>
                     <p class="text-center">
                     <li><a id="#1" href="#1">Basic Goal</a></li>
@@ -31,11 +20,11 @@
                     <li><a data-ui-sref="projects.list">View other Projects</a></li>
                     <li><a data-ui-sref="support.example">Example</a></li>
                     <li><a data-ui-sref="support.faq">FAQ</a></li>
-                    </p> 
-                </ul> -->
+                    </p>
+                </ul>
             </div>
             <!-- This is the main form with the various fileds the user has to fill out. It's linked to the database. -->
-
+            
             <div class="col-sm-7 col-sm-offset-3 col-md-8 col-md-offset-2 main" data-ng-hide="authentication.user._id==NULL">
                 
                 <h2 class="sub-header">Design : <input id="name" type="text" placeholder="Project Name" data-ng-model="name"></h2>
@@ -76,18 +65,6 @@
                         <br>
                         <textarea class="form-control" rows="4" data-ng-model="ask.constraints"></textarea>
                         <br>
-
-
-                        <div class="cart"> 
-                            <!--<div class="ui-widget-content"> 
-                             if this is wanted then add (adds a grey box which can be done a diff way probably) <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/ui-lightness/jquery-ui.min.css" rel="stylesheet" type="text/css" /> to layout.server.view.html-->
-                            <ol data-drop="true" ng-model='list4' jqyoui-droppable="{multiple:true}"> 
-                                <li ng-repeat="item in list4 track by $index" ng-show="item.title" data-drag="true" data-jqyoui-options="{revert: 'invalid', helper: 'clone'}" ng-model="list4" jqyoui-draggable="{index: {{$index}},animate:true}">{{item.title}}</li>
-                                <li class="placeholder" ng-hide="hideMe()">Add your Standards here</li>
-                            </ol>
-                            <!-- </div> -->
-                        </div>
-
 
                     </div>
                 </div>
@@ -181,7 +158,7 @@
                         <br>
                         <br>
 
-         <!-- Below is the code to add a subject. The same code is repeated to add up to a total of 5 topics. -->
+         <!-- Below is the code to add a subject. The same code is repeated to add up to a toal of 5 topics. -->
          
             <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
             <center><button type="submit" class="btn btn-primary btn-block" ng-click="show1 = true; essentialDetails.otherSubject = []; essentialDetails.otherSubject.push()">Add a subject</button></center></div>
