@@ -96,12 +96,6 @@ var ProjectSchema = new Schema({
 			default: ''
 		}
 	},
-	researchStep: {
-		researchStepDetails: {
-			type: String,
-			default: ''
-		}
-	},
 	imagine: {
 		brainstorm: {
 			type: String,
@@ -112,30 +106,6 @@ var ProjectSchema = new Schema({
 			default: ''
 		},
 		materials: {
-			type: String,
-			default: ''
-		}
-	},
-	planStep: {
-		planStepDetails: {
-			type: String,
-			default: ''
-		}
-	},
-	createStep: {
-		createStepDetails: {
-			type: String,
-			default: ''
-		}
-	},
-	testStep: {
-		testStepDetails: {
-			type: String,
-			default: ''
-		}
-	},
-	improveStep: {
-		improveStepDetails: {
 			type: String,
 			default: ''
 		}

@@ -101,12 +101,7 @@ angular.module('projects').controller('ProjectsController', ['$scope', '$statePa
 				minGrade: this.minGrade,
 				maxGrade: this.maxGrade,
 				ask: this.ask,
-				researchStep: this.researchStep,
 				imagine: this.imagine,
-				planStep: this.planStep,
-				createStep: this.createStep,
-				testStep: this.testStep,
-				improveStep: this.improveStep,
 				essentialDetails: this.essentialDetails,
 				rating: null
 			});
