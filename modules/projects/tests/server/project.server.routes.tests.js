@@ -38,6 +38,8 @@ describe('Project CRUD tests', function() {
 			lastName: 'Name',
 			displayName: 'Full Name',
 			email: 'test@test.com',
+			age: '0', //3-11 12:30 test!
+			gradesTaught: '0',
 			username: credentials.username,
 			password: credentials.password,
 			provider: 'local'
