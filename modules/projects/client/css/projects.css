@@ -23,6 +23,7 @@
 		background-color: #f5f5f5;
 		border-right: 1px solid #fbc650;
 		border-top: 1px solid #fbc650;
+		border-left: 1px solid #fbc650;
 		bottom: 0;
 		display: block;
 		left: 0;
@@ -33,6 +34,12 @@
 		top: 51px;
 		z-index: 0 !important;
 	}
+}
+
+.cart { 
+    width: 600px; 
+    float: left; 
+    margin-top: 1em; 
 }
 
 /* Side Button CS*/
